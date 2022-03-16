@@ -211,7 +211,7 @@ public class Matrix
             bool Isdiagonal = true;
             int row = 0;
             int col = 0;
-            for (int k = 1; k < list1.Count; k++)
+            for (int k = 0; k < list1.Count; k++)
             {
                 if (list1[row][col] != list1[row + 1][col + 1])
                     Isdiagonal = false;
@@ -225,7 +225,28 @@ public class Matrix
             Debug.LogError("Matrix must be square");
             return false;
         }
-
+    }
+    public bool IsinverseDiagonalSame()
+    {
+        if (list1.Count == list1[1].Count)
+        {
+            bool inverseDiagonal = true;
+            int row = 0;
+            int col = list1[1].Count - 1;
+            for (int k = 1; k < list1.Count; k++)
+            {
+                if (list1[row][col] != list1[row + 1][col - 1])
+                    inverseDiagonal = false;
+                row++;
+                col--;
+            }
+            return inverseDiagonal;
+        }
+        else
+        {
+            Debug.LogError("Matrix must be square");
+            return false;
+        }
     }
 
 }

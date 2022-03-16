@@ -294,7 +294,6 @@ GameObject:
   - component: {fileID: 2827356967500329176}
   - component: {fileID: 2827356967500329177}
   - component: {fileID: -1106669767188321836}
-  - component: {fileID: 150983106}
   m_Layer: 0
   m_Name: EmptyCube
   m_TagString: Untagged
@@ -397,24 +396,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &150983106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2827356967500329183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b332bd536cb51bc4da02c9a43e4d76ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cellstate:
-  - {fileID: 2827356968401824955}
-  - {fileID: 2827356968651869931}
-  - {fileID: 2827356967263415924}
-  - {fileID: 2827356967288694638}
-  - {fileID: 2827356967342682070}
 --- !u!1 &2827356967833658418
 GameObject:
   m_ObjectHideFlags: 0

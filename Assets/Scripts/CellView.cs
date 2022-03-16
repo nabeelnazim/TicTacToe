@@ -10,7 +10,6 @@ public class CellView : MonoBehaviour
     void Start()
     {
         cell.statusupdated += SetStatus;
-
     }
 
     void Update()
